@@ -1,0 +1,10 @@
+.card-right{
+    position: relative;
+}
+
+.accuracy{
+    position: absolute;
+    right:1.5rem;
+    top:1.5rem;
+
+}

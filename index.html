@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- css links -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>AI world</title>
+</head>
+<body>
+    
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn rounded-circle text-danger" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle fs-4"></i></button>
+          </div>
+          <!-- modal body -->
+          <div class="modal-body">
+            <!-- modal left -->
+            <div class="row">
+              <div class="col col-sm-6 mb-3 mb-sm-0">
+                <div class="card p-4 border border-danger">
+                  <div class="card-body" id="details-body">
+                  
+                    
+
+
+                  </div>
+                </div>
+              </div>
+              <!-- modal right -->
+              <div class="col-sm-6">
+                <div class="card p-3" class="card-right" id="card-right">
+                  <!-- card right -->
+                  
+                    <div class="accuracy bg-danger text-white px-3 py-2 rounded d-none" id="accuracy">accuracy</div>
+                    <img src="" class="card-img-top img-fluid" alt="..." id="image-details">
+                 
+                  <div class="card-body text-center">
+                    <h3>Hi, How are you doing today?</h3>
+                    <p class="card-text">I'm doing well, thank you for asking. How can I assit you today</p>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- contents -->
+
+    <main class="container p-4 mt-5">
+    <h1 class="heading text-center text-uppercase mt-5 text-dark fw-bold">AI Universe Hub</h1>
+    
+    <!-- sort by date -->
+
+
+    <div class="text-center">
+    <button class="btn btn-danger text-center mx-auto mt-4 px-4 py-2" id="sort">Sort By date</button>
+    </div>
+
+
+    <!-- no data found -->
+
+    <div id="no-found-message" class="mt-5 d-none">
+        <h3 class="text-danger text-center">No data Found error(404)</h3>
+    </div>
+
+              <!-- spinner -->
+             <div class="text-center mt-5 d-none" id="spinner">
+                <div class="spinner-border text-danger mx-auto" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+              
+
+    <!-- loaded data -->
+
+    <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 data-section p-3 mt-5" id="data-section">
+
+
+        <!-- card section -->
+        <!-- <div class="col">
+
+            <div class="card px-2 py-3">
+                <img src="#" class="card-img-top img-fluid figure-img rounded" alt="">
+                    <div class="card-body p-1">
+                        <h5 class="card-title" id="card-title">feature</h5>
+                        <div class="fst-normal" style="font-size: smaller;">
+                            <p class="m-0">1.adfdf dfdf</p>
+                            <p class="m-0">1.adfdf dfdf</p>
+                            <p class="m-0">1.adfdf dfdf</p>
+                        </div>
+                    <div class="footer mt-3" style="height:4.5rem">
+                            <div class="d-flex justify-content-between align-items-center border-top p-1">
+                                <p class="fw-bold fs-4" id="ai-name">name</p>
+                                <button onclick="" href="#" class="btn btn-outline-danger rounded-circle" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-arrow-right fs-6"></i></button>
+                            </div>
+                        <p><i class="bi bi-calendar me-2"></i><span id="date">11/22/22</span></p>
+                    </div>
+                </div>
+            </div>
+                
+        </div> -->
+
+        
+               
+        
+    </section>
+
+
+     <!-- sort by date -->
+     <div class="text-center">
+        <button class="btn btn-danger text-center mx-auto mt-4 px-5 py-2 d-none" id="show-all">Show All</button>
+        </div>
+    </main>
+  
+
+   
+   <script src="script/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
